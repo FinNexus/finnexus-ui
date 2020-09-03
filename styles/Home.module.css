@@ -1,0 +1,99 @@
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1280px 1fr;
+  background-color: var(--basic-background-color);
+  height: 80vh;
+}
+
+.navbar {
+  padding: 0 40px;
+  grid-area: navbar;
+  background-color: var(--top-color);
+  height: 100%;
+  align-items: center;
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  grid-column-gap: 10px;
+  z-index: 2;
+  text-align: center;
+}
+
+.mainContent {
+  grid-area: main-content;
+}
+
+.centerContent {
+  display: grid;
+  grid-template-rows: 120px 1fr;
+  grid-template-areas: "navbar" "main-content";
+}
+
+.leftStyleBackground {
+  height: 800px;
+  background-color: var(--top-color);
+  border-bottom-left-radius: 350px;
+}
+
+.rightStyleBackground {
+  height: 800px;
+  background-color: var(--top-color);
+  border-bottom-right-radius: 350px;
+}
+
+.upperMainContent {
+  height: 680px;
+  padding: 0 40px;
+  background-color: var(--top-color);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.logoProps {
+  height: 60px;
+}
+
+.langIcoProps {
+  height: 50px;
+  margin: 0 7px;
+}
+
+.navBtnsContainer {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  align-items: center;
+}
+
+.fnxBtn {
+  width: 180px;
+  height: 60px;
+  text-decoration: none;
+  color: white;
+  border: none;
+  background-color: var(--top-color);
+  cursor: pointer;
+}
+
+.fnxBtn:hover {
+  font-weight: bold;
+  background-color: var(--select-btn-color);
+  border-radius: 25px;
+  color: var(--top-color);
+}
+
+.appBtn {
+  height: 120px;
+  position: absolute;
+  width: 150px;
+  display: inline-block;
+  right: -33px;
+  z-index: -1;
+  background-color: white;
+}
+
+.compName {
+  color: white;
+  font-family: "Noto Sans";
+  font-weight: bold;
+  font-size: 5em;
+}
