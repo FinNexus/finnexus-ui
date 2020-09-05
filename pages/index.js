@@ -28,10 +28,15 @@ export default function Home() {
           <div className={styles.upperMainContent}>
             <div>
               <p className={styles.compName}>FinNexus</p>
-              <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ul
-</p>
+              <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ul</p>
+              <span>
+                <button className={`${styles.fnxBtn} ${styles.fnxPinkBtn}`}>Click1</button>
+                <button className={`${styles.fnxBtn} ${styles.fnxWhiteBtn}`}>Click1</button>
+              </span>
             </div>
-            <div></div>
+            <div>
+
+            </div>
           </div>
         </div>
       </div>
