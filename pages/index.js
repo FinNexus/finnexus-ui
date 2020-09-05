@@ -1,8 +1,13 @@
 import styles from "../styles/Home.module.css";
+import Head from 'next/head';
 
 export default function Home() {
   return (
     <div className={styles.container}>
+      <Head>
+        <title>FinNexus</title>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet"></link>
+      </Head>
       <div>
         <div className={styles.leftStyleBackground}></div>
       </div>
@@ -22,7 +27,9 @@ export default function Home() {
         <div className={styles.mainContent}>
           <div className={styles.upperMainContent}>
             <div>
-              <h1 className={styles.compName}>FinNexus</h1>
+              <p className={styles.compName}>FinNexus</p>
+              <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ul
+</p>
             </div>
             <div></div>
           </div>

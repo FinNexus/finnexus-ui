@@ -48,6 +48,10 @@
   grid-template-columns: 1fr 1fr;
 }
 
+div.upperMainContent p {
+  color: white;
+}
+
 .logoProps {
   height: 60px;
 }
@@ -93,7 +97,7 @@
 
 .compName {
   color: white;
-  font-family: "Noto Sans";
   font-weight: bold;
-  font-size: 5em;
+  font-size: 7em;
+  margin-bottom: 0;
 }
