@@ -205,3 +205,55 @@ div.upperMainContent p {
   font-size: 2em;
   font-weight: 800;
 }
+
+.thirdSection {
+  height: 1600px;
+}
+
+.thirdSectionContent {
+  background: linear-gradient(
+    180deg,
+    var(--basic-background-color) 25%,
+    var(--select-btn-color) 25%,
+    var(--select-btn-color) 70%,
+    var(--dark-pink-color) 30%
+  );
+}
+
+.leftThirdSection {
+  display: flex;
+  flex-direction: column;
+}
+
+.rightThirdSection {
+  display: flex;
+  flex-direction: column;
+}
+
+.leftThirdOuterSection {
+  height: 75%;
+  background-color: var(--dark-pink-color);
+  border-top-left-radius: 350px;
+  border-bottom-left-radius: 350px;
+}
+
+.rightThirdOuterSection {
+  height: 75%;
+  background-color: var(--dark-pink-color);
+  border-top-right-radius: 350px;
+  border-bottom-right-radius: 350px;
+}
+
+.leftThirdInnerSection {
+  height: 60%;
+  background-color: var(--select-btn-color);
+  border-top-left-radius: 350px;
+  border-bottom-left-radius: 350px;
+}
+
+.rightThirdInnerSection {
+  height: 60%;
+  background-color: var(--select-btn-color);
+  border-top-right-radius: 350px;
+  border-bottom-right-radius: 350px;
+}

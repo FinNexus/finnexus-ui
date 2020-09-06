@@ -45,7 +45,6 @@ export default function Home() {
       {/** END -- Upper Section. Can be later moved to a component */}
 
       {/** START -- Next Section Content */}
-
       <div className={`${styles.section} ${styles.middleSection}`}>
         <div className={`${styles.leftStyleBackground} ${styles.leftPinkStyleBackground}`}>
           <div className={`${styles.leftPinkStyleBackground} ${styles.leftLightPinkStyleBackground}`}></div>
@@ -79,11 +78,24 @@ export default function Home() {
         </div>
         <div className={`${styles.rightStyleBackground} ${styles.rightPinkStyleBackground}`}>
           <div className={`${styles.rightPinkStyleBackground} ${styles.rightLightPinkStyleBackground}`}>
-
           </div>
         </div>
       </div>
       {/** END -- Next Section Content */}
+
+      {/** START -- Third Section Content */}
+      <div className={`${styles.section} ${styles.thirdSection}`}>
+        <div className={styles.leftThirdSection}>
+          <div style={{ height: "25%" }}>1</div>
+          <div className={styles.leftThirdOuterSection}><div className={styles.leftThirdInnerSection}>2</div>3</div>
+        </div>
+        <div className={styles.thirdSectionContent}>content</div>
+        <div className={styles.rightThirdSection}>
+          <div style={{ height: "25%" }}>1</div>
+          <div className={styles.rightThirdOuterSection}><div className={styles.rightThirdInnerSection}>2</div>3</div>
+        </div>
+      </div>
+      {/** END -- Third Section Content */}
     </div>
   );
 }
