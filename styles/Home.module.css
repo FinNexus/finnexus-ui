@@ -47,8 +47,20 @@
 }
 
 .rightPinkStyleBackground {
-  background-color: var(--dark-pink-color);
   border-top-right-radius: 350px;
+  background-color: var(--dark-pink-color);
+}
+
+.leftRoundLightPink {
+  border-top-left-radius: 350px;
+  border-bottom-left-radius: 350px;
+  background-color: var(--light-pink-color);
+}
+
+.rightRoundLightPink {
+  border-top-right-radius: 350px;
+  border-bottom-right-radius: 350px;
+  background-color: var(--light-pink-color);
 }
 
 .upperMainContent {
@@ -127,7 +139,43 @@ div.upperMainContent p {
   margin-bottom: 0;
 }
 
-
 .middleSection {
-  height: 1200px;
+  height: 1600px;
+}
+
+.middleSectionContent {
+  background: linear-gradient(
+    180deg,
+    var(--light-pink-color) 50%,
+    var(--dark-pink-color) 50%
+  );
+  display: flex;
+  flex-direction: column;
+}
+
+.leftLightPinkStyleBackground {
+  background-color: var(--light-pink-color);
+  height: 50%;
+  width: 100%;
+  border-bottom-left-radius: 350px;
+}
+
+.rightLightPinkStyleBackground {
+  background-color: var(--light-pink-color);
+  height: 50%;
+  width: 100%;
+  border-bottom-right-radius: 350px;
+}
+
+.halfMiddleSection {
+  height: 50%;
+  display: inherit;
+}
+
+.halfMiddleOneThird {
+  width: calc(100% / 3);
+}
+
+.halfMiddleTwoThird {
+  width: calc(100% * 2 / 3);
 }

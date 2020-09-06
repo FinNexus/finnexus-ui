@@ -45,15 +45,28 @@ export default function Home() {
       {/** END -- Upper Section. Can be later moved to a component */}
 
       {/** START -- Next Section Content */}
+
       <div className={`${styles.section} ${styles.middleSection}`}>
-        <div className={`${styles.leftStyleBackground} ${styles.leftPinkStyleBackground}`}></div>
-        <div>
-          next content
+        <div className={`${styles.leftStyleBackground} ${styles.leftPinkStyleBackground}`}>
+          <div className={`${styles.leftPinkStyleBackground} ${styles.leftLightPinkStyleBackground}`}></div>
         </div>
-        <div className={`${styles.rightStyleBackground} ${styles.rightPinkStyleBackground}`}></div>
+        <div className={`${styles.middleSectionContent}`}>
+          <div className={`${styles.halfMiddleSection}`}>
+            <div className={styles.halfMiddleOneThird}>1/3 Left upper</div>
+            <div className={styles.halfMiddleTwoThird}>2/3 right upper</div>
+          </div>
+          <div className={`${styles.halfMiddleSection}`}>
+            <div className={styles.halfMiddleTwoThird}>2/3 right lower</div>
+            <div className={styles.halfMiddleOneThird}>1/3 Left lower</div>
+          </div>
+        </div>
+        <div className={`${styles.rightStyleBackground} ${styles.rightPinkStyleBackground}`}>
+          <div className={`${styles.rightPinkStyleBackground} ${styles.rightLightPinkStyleBackground}`}>
+
+          </div>
+        </div>
       </div>
       {/** END -- Next Section Content */}
-
     </div>
   );
 }
