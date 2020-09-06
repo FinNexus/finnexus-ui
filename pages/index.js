@@ -52,12 +52,29 @@ export default function Home() {
         </div>
         <div className={`${styles.middleSectionContent}`}>
           <div className={`${styles.halfMiddleSection}`}>
-            <div className={styles.halfMiddleOneThird}>1/3 Left upper</div>
-            <div className={styles.halfMiddleTwoThird}>2/3 right upper</div>
+            <div className={styles.halfMiddleOneThird}>
+              <div className={styles.imageContainer}>
+                <div className={styles.imageBox}></div>
+                <div className={styles.textBox}><span className={styles.biggerText}>FPO</span> v1.0</div>
+              </div>
+              <div style={{ padding: "30px 0", color: "white" }}>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ul
+              </div>
+              <button className={`${styles.fnxBtn} ${styles.fnxWhiteBtn}`}>Click1</button>
+            </div>
+            <div className={styles.halfMiddleTwoThird}></div>
           </div>
           <div className={`${styles.halfMiddleSection}`}>
-            <div className={styles.halfMiddleTwoThird}>2/3 right lower</div>
-            <div className={styles.halfMiddleOneThird}>1/3 Left lower</div>
+            <div className={styles.halfMiddleTwoThird}></div>
+            <div className={styles.halfMiddleOneThird}>
+              <div className={styles.imageContainer}>
+                <div className={styles.textBox}>
+                  <span className={styles.biggerText}>FPO</span> v1.0
+                  </div>
+                <div className={styles.imageBox}></div>
+              </div>
+              <div style={{ padding: "30px 0", color: "white" }}>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ul
+              </div>
+              <button className={`${styles.fnxBtn} ${styles.fnxWhiteBtn}`}>Click1</button></div>
           </div>
         </div>
         <div className={`${styles.rightStyleBackground} ${styles.rightPinkStyleBackground}`}>

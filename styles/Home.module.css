@@ -170,6 +170,7 @@ div.upperMainContent p {
 .halfMiddleSection {
   height: 50%;
   display: inherit;
+  padding: 70px 40px 20px 40px;
 }
 
 .halfMiddleOneThird {
@@ -178,4 +179,29 @@ div.upperMainContent p {
 
 .halfMiddleTwoThird {
   width: calc(100% * 2 / 3);
+  border: 1px solid white;
+}
+
+.imageContainer {
+  display: flex;
+}
+
+.imageBox {
+  width: 50%;
+  height: 215px;
+  background-color: white;
+  border-radius: 25px;
+}
+
+.textBox {
+  width: 50%;
+  align-self: flex-end;
+  padding-left: 10px;
+  color: white;
+  font-size: 3em;
+}
+
+.biggerText {
+  font-size: 2em;
+  font-weight: 800;
 }
