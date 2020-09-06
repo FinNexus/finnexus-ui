@@ -24,11 +24,11 @@ export default function ArrowComponent(props) {
                         margin-left: 6px;
                         color: white;`;
     } else if (props.size === 'large') {
-        width = height = "100px";
+        width = height = "75px";
         innerStyle = `display: inline-block;
-                        margin-top: 0px;
+                        margin-top: -12px;
                         font-size: 4rem;
-                        margin-left: 19px;
+                        margin-left: 8px;
                         color: white;`
     }
 
