@@ -113,8 +113,28 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div></div>
-          <div></div>
+          <div className={styles.picSliderContainer}>
+            <div className={styles.picSliderTextBox}><div style={{ width: "25%" }}></div><div><p className={styles.picSliderTextHeader}>INVESTORS</p><p className={styles.picSliderTextContent}>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy</p></div></div>
+            <div className={styles.picSlider}>
+              <span><ArrowComponent right="96%" bottom="80px" size="large" glyphDir="left" glyphColor="blue" /></span>
+              <div className={styles.picSliderBox}></div>
+              <div className={styles.picSliderBox}></div>
+              <div className={styles.picSliderBox}></div>
+              <div className={styles.picSliderBox}></div>
+              <span><ArrowComponent right="10px" bottom="80px" size="large" glyphDir="right" glyphColor="blue" /></span>
+            </div>
+          </div>
+          <div className={styles.picSliderContainer}>
+            <div className={styles.picSliderTextBox}><div style={{ width: "25%" }}></div><div><p className={styles.picSliderTextHeader}>INVESTORS</p><p className={styles.picSliderTextContent}>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy</p></div></div>
+            <div className={styles.picSlider}>
+              <span><ArrowComponent right="96%" bottom="80px" size="large" glyphDir="left" glyphColor="lightpink" /></span>
+              <div className={styles.picSliderBox}></div>
+              <div className={styles.picSliderBox}></div>
+              <div className={styles.picSliderBox}></div>
+              <div className={styles.picSliderBox}></div>
+              <span><ArrowComponent right="10px" bottom="80px" size="large" glyphDir="right" glyphColor="lightpink" /></span>
+            </div>
+          </div>
         </div>
         <div className={styles.rightThirdSection}>
           <div style={{ height: "25%" }}></div>
