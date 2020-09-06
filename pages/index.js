@@ -1,5 +1,6 @@
 import styles from "../styles/Home.module.css";
 import Head from 'next/head';
+import ArrowComponent from '../components/arrow';
 
 export default function Home() {
   return (
@@ -35,7 +36,6 @@ export default function Home() {
                 </span>
               </div>
               <div>
-
               </div>
             </div>
           </div>
@@ -86,13 +86,39 @@ export default function Home() {
       {/** START -- Third Section Content */}
       <div className={`${styles.section} ${styles.thirdSection}`}>
         <div className={styles.leftThirdSection}>
-          <div style={{ height: "25%" }}>1</div>
-          <div className={styles.leftThirdOuterSection}><div className={styles.leftThirdInnerSection}>2</div>3</div>
+          <div style={{ height: "25%" }}></div>
+          <div className={styles.leftThirdOuterSection}><div className={styles.leftThirdInnerSection}></div></div>
         </div>
-        <div className={styles.thirdSectionContent}>content</div>
+        <div className={styles.thirdSectionContent}>
+          <div className={styles.picBoxContainer}>
+            <div className={styles.picBox}>
+              <div className={styles.innerPicBox}>
+                <p className={styles.innerBoxTitle}>Title</p>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy </p>
+                <ArrowComponent position="bottom right" size="medium" glyphDir="right" glyphColor="pink" />
+              </div>
+            </div>
+            <div className={styles.picBox}>
+              <div className={styles.innerPicBox}>
+                <p className={styles.innerBoxTitle}>Title</p>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy </p>
+                <ArrowComponent position="bottom right" size="medium" glyphDir="right" glyphColor="pink" />
+              </div>
+            </div>
+            <div className={styles.picBox}>
+              <div className={styles.innerPicBox}>
+                <p className={styles.innerBoxTitle}>Title</p>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy </p>
+                <ArrowComponent position="bottom right" size="medium" glyphDir="right" glyphColor="pink" />
+              </div>
+            </div>
+          </div>
+          <div></div>
+          <div></div>
+        </div>
         <div className={styles.rightThirdSection}>
-          <div style={{ height: "25%" }}>1</div>
-          <div className={styles.rightThirdOuterSection}><div className={styles.rightThirdInnerSection}>2</div>3</div>
+          <div style={{ height: "25%" }}></div>
+          <div className={styles.rightThirdOuterSection}><div className={styles.rightThirdInnerSection}></div></div>
         </div>
       </div>
       {/** END -- Third Section Content */}
