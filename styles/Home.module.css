@@ -1,8 +1,11 @@
 .container {
+  background-color: var(--basic-background-color);
+}
+
+.section {
   display: grid;
   grid-template-columns: 1fr 1280px 1fr;
-  background-color: var(--basic-background-color);
-  height: 80vh;
+  height: 800px;
 }
 
 .navbar {
@@ -29,15 +32,23 @@
 }
 
 .leftStyleBackground {
-  height: 800px;
   background-color: var(--top-color);
   border-bottom-left-radius: 350px;
 }
 
 .rightStyleBackground {
-  height: 800px;
   background-color: var(--top-color);
   border-bottom-right-radius: 350px;
+}
+
+.leftPinkStyleBackground {
+  background-color: var(--dark-pink-color);
+  border-top-left-radius: 350px;
+}
+
+.rightPinkStyleBackground {
+  background-color: var(--dark-pink-color);
+  border-top-right-radius: 350px;
 }
 
 .upperMainContent {
@@ -114,4 +125,9 @@ div.upperMainContent p {
   font-weight: bold;
   font-size: 7em;
   margin-bottom: 0;
+}
+
+
+.middleSection {
+  height: 1200px;
 }
