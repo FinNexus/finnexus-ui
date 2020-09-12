@@ -5,13 +5,25 @@
 .section {
   display: grid;
   grid-template-columns: 1fr 1280px 1fr;
-  height: 800px;
+}
+
+.bkgImgBlue {
+  background-image: url(/bg_top_header.svg);
+  background-position-x: center;
+  background-position-y: top;
+  background-repeat: no-repeat;
+}
+
+.bkgImgBlueInverted {
+  background-image: url(/bg_top_header_inverted.svg);
+  background-position-x: center;
+  background-position-y: top;
+  background-repeat: no-repeat;;
 }
 
 .navbar {
   padding: 0 40px;
   grid-area: navbar;
-  background-color: var(--top-color);
   height: 100%;
   align-items: center;
   display: grid;
@@ -28,6 +40,7 @@
 
 .centerContent {
   display: grid;
+  min-height: 800px;
   grid-template-rows: 120px 1fr;
   grid-template-areas: "navbar" "main-content";
 }
@@ -38,41 +51,34 @@
   grid-template-areas: "main-content" "navbar";
 }
 .leftStyleBackground {
-  background-color: var(--top-color);
   border-bottom-left-radius: 350px;
 }
 
 .rightStyleBackground {
-  background-color: var(--top-color);
   border-bottom-right-radius: 350px;
 }
 
 .leftPinkStyleBackground {
-  background-color: var(--dark-pink-color);
   border-top-left-radius: 350px;
 }
 
 .rightPinkStyleBackground {
   border-top-right-radius: 350px;
-  background-color: var(--dark-pink-color);
 }
 
 .leftRoundLightPink {
   border-top-left-radius: 350px;
   border-bottom-left-radius: 350px;
-  background-color: var(--light-pink-color);
 }
 
 .rightRoundLightPink {
   border-top-right-radius: 350px;
   border-bottom-right-radius: 350px;
-  background-color: var(--light-pink-color);
 }
 
 .upperMainContent {
   height: 680px;
   padding: 0 40px;
-  background-color: var(--top-color);
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
@@ -88,27 +94,28 @@ div.upperMainContent p {
 .langIcoProps {
   height: 50px;
   margin: 0 7px;
+  width: 50px;
 }
 
 .navBtnsContainer {
   position: relative;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  display: flex;
   align-items: center;
 }
 
 .fnxBtn {
-  width: 175px;
-  height: 60px;
+  width: 9em;
+  height: 3em;
   text-decoration: none;
   color: white;
   border: none;
   background-color: var(--top-color);
   cursor: pointer;
-  font-size: 1.2em;
+  font-size: 1em;
   font-weight: bold;
   border-radius: 30px;
   margin: 0 4px;
+  max-width: 100%;
 }
 
 .fnxWhiteBtn {
@@ -146,28 +153,25 @@ div.upperMainContent p {
 }
 
 .middleSection {
-  height: 1600px;
+  background-image: url(/capsule_purplelight.svg);
+  background-position-x: center;
+  background-position-y: top;
+  background-repeat: no-repeat;
+  min-height: 714px;
 }
 
 .middleSectionContent {
-  background: linear-gradient(
-    180deg,
-    var(--light-pink-color) 50%,
-    var(--dark-pink-color) 50%
-  );
   display: flex;
   flex-direction: column;
 }
 
 .leftLightPinkStyleBackground {
-  background-color: var(--light-pink-color);
   height: 50%;
   width: 100%;
   border-bottom-left-radius: 350px;
 }
 
 .rightLightPinkStyleBackground {
-  background-color: var(--light-pink-color);
   height: 50%;
   width: 100%;
   border-bottom-right-radius: 350px;
@@ -214,16 +218,12 @@ div.upperMainContent p {
 
 .thirdSection {
   height: 1600px;
+  background-image: url(/capsule_bluelight.svg), url(/capsule_purple.svg);
+  background-repeat: no-repeat, no-repeat;
+  background-position: top 33% center, top 75% center;
 }
 
 .thirdSectionContent {
-  background: linear-gradient(
-    180deg,
-    var(--basic-background-color) 25%,
-    var(--select-btn-color) 25%,
-    var(--select-btn-color) 70%,
-    var(--dark-pink-color) 30%
-  );
   display: flex;
   flex-direction: column;
 }
@@ -240,28 +240,24 @@ div.upperMainContent p {
 
 .leftThirdOuterSection {
   height: 75%;
-  background-color: var(--dark-pink-color);
   border-top-left-radius: 350px;
   border-bottom-left-radius: 350px;
 }
 
 .rightThirdOuterSection {
   height: 75%;
-  background-color: var(--dark-pink-color);
   border-top-right-radius: 350px;
   border-bottom-right-radius: 350px;
 }
 
 .leftThirdInnerSection {
   height: 60%;
-  background-color: var(--select-btn-color);
   border-top-left-radius: 350px;
   border-bottom-left-radius: 350px;
 }
 
 .rightThirdInnerSection {
   height: 60%;
-  background-color: var(--select-btn-color);
   border-top-right-radius: 350px;
   border-bottom-right-radius: 350px;
 }
@@ -346,11 +342,9 @@ div.picSliderBox:last-of-type {
 
 .leftUpperStyleBackground {
   border-top-left-radius: 350px;
-  background-color: var(--top-color);
 }
 
 .rightUpperStyleBackground {
-  background-color: var(--top-color);
   border-top-right-radius: 350px;
 }
 
