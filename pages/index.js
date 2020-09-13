@@ -1,6 +1,7 @@
 import styles from "../styles/Home.module.css";
 import Head from 'next/head';
 import ArrowComponent from '../components/arrow';
+import MemberComponent from '../components/member';
 
 export default function Home() {
   return (
@@ -35,7 +36,8 @@ export default function Home() {
                   <button className={`${styles.fnxBtn} ${styles.fnxWhiteBtn}`}>Click1</button>
                 </span>
               </div>
-              <div>
+              <div style={{ padding: "1em 1em 20em 15em" }}>
+                <object style={{ height: "15em" }} data="bgshape_01.svg" type="image/svg+xml"></object>
               </div>
             </div>
           </div>
@@ -130,6 +132,9 @@ export default function Home() {
       </div>
       {/** END -- Third Section Content */}
 
+      <div className={`${styles.section}`}>
+        <MemberComponent></MemberComponent>
+      </div>
       {/** START -- Bottom Section */}
       <div className={`${styles.section} ${styles.bkgImgBlueInverted}`} style={{ minHeight: "800px" }}>
         <div className={styles.leftUpperStyleBackground}></div>
@@ -165,7 +170,8 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className={styles.rightUpperStyleBackground}></div>
+        <div className={styles.rightUpperStyleBackground}>
+        </div>
       </div>
       {/** END -- Bottom Section */}
     </div>

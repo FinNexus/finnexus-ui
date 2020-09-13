@@ -4,7 +4,7 @@
 
 .section {
   display: grid;
-  grid-template-columns: 1fr 1280px 1fr;
+  grid-template-columns: 1fr max(1000px) 1fr;
 }
 
 .bkgImgBlue {
@@ -81,6 +81,10 @@
   padding: 0 40px;
   display: grid;
   grid-template-columns: 1fr 1fr;
+}
+
+.upperMainContent::after {
+  content: '';
 }
 
 div.upperMainContent p {
