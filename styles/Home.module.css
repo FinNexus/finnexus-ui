@@ -33,11 +33,11 @@
   z-index: 2;
   text-align: center;
 } */
-
+/* 
 .mainContent {
   grid-area: main-content;
   display: flex;
-}
+} */
 
 .centerContent {
   min-height: 800px;
@@ -49,31 +49,6 @@
   display: grid;
   grid-template-rows: 1fr 120px 80px;
   grid-template-areas: "main-content" "navbar";
-}
-.leftStyleBackground {
-  border-bottom-left-radius: 350px;
-}
-
-.rightStyleBackground {
-  border-bottom-right-radius: 350px;
-}
-
-.leftPinkStyleBackground {
-  border-top-left-radius: 350px;
-}
-
-.rightPinkStyleBackground {
-  border-top-right-radius: 350px;
-}
-
-.leftRoundLightPink {
-  border-top-left-radius: 350px;
-  border-bottom-left-radius: 350px;
-}
-
-.rightRoundLightPink {
-  border-top-right-radius: 350px;
-  border-bottom-right-radius: 350px;
 }
 
 .upperMainContent {
@@ -168,22 +143,11 @@ div.upperMainContent p {
   flex-direction: column;
 }
 
-.leftLightPinkStyleBackground {
-  height: 50%;
-  width: 100%;
-  border-bottom-left-radius: 350px;
-}
-
-.rightLightPinkStyleBackground {
-  height: 50%;
-  width: 100%;
-  border-bottom-right-radius: 350px;
-}
-
 .halfMiddleSection {
   height: 50%;
   display: inherit;
-  padding: 70px 40px 20px 40px;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
 }
 
 .halfMiddleOneThird {
@@ -201,9 +165,14 @@ div.upperMainContent p {
 
 .imageBox {
   width: 50%;
-  height: 215px;
   background-color: white;
   border-radius: 25px;
+}
+
+.imageBox::after {
+  content: "";
+  display: block;
+  padding-bottom: 100%;
 }
 
 .textBox {
@@ -211,11 +180,11 @@ div.upperMainContent p {
   align-self: flex-end;
   padding-left: 10px;
   color: white;
-  font-size: 3em;
+  font-size: 2em;
 }
 
 .biggerText {
-  font-size: 2em;
+  font-size: 1.5em;
   font-weight: 800;
 }
 
@@ -223,7 +192,6 @@ div.upperMainContent p {
   height: 1600px;
   background-image: url(/capsule_bluepurple.svg);
   background-repeat: no-repeat;
-  background-position: top 36% center;
 }
 
 .thirdSectionContent {
@@ -241,57 +209,44 @@ div.upperMainContent p {
   flex-direction: column;
 }
 
-.leftThirdOuterSection {
-  height: 75%;
-  border-top-left-radius: 350px;
-  border-bottom-left-radius: 350px;
-}
-
-.rightThirdOuterSection {
-  height: 75%;
-  border-top-right-radius: 350px;
-  border-bottom-right-radius: 350px;
-}
-
-.leftThirdInnerSection {
-  height: 60%;
-  border-top-left-radius: 350px;
-  border-bottom-left-radius: 350px;
-}
-
-.rightThirdInnerSection {
-  height: 60%;
-  border-top-right-radius: 350px;
-  border-bottom-right-radius: 350px;
-}
-
 .picBoxContainer {
   display: flex;
   height: 30%;
   width: 100%;
-  padding-top: 100px;
+  margin: 0 6rem !important;
 }
 
 .picBox {
-  width: 33%;
+  width: 15rem;
   margin-right: 15px;
-  border-radius: 40px;
+  border-radius: 20px;
   background-color: var(--dark-gray-color);
   position: relative;
   display: flex;
 }
 
+.picBox::after {
+  content: "";
+  display: block;
+  padding-bottom: 100%;
+}
+
+.rightMargin {
+  margin-right: 15px;
+}
+
 .innerPicBox {
   height: 36%;
-  padding: 25px 45px;
+  padding: 0px 23px;
   align-self: flex-end;
-  border-radius: 40px;
+  border-radius: 20px;
   background-color: white;
+  font-size: 12px;
 }
 
 .innerBoxTitle {
   color: var(--dark-pink-color);
-  font-size: 20px;
+  font-size: 18px;
   font-weight: bold;
 }
 
@@ -392,6 +347,11 @@ span.userPicIcon:first-of-type {
     padding: 0 10em;
   }
 
+  .halfMiddleSection {
+    padding-left: 10em !important;
+    padding-right: 10em !important;
+  }
+
   .compName {
     font-size: 2rem;
   }
@@ -409,5 +369,26 @@ span.userPicIcon:first-of-type {
 
   .navBtnsContainer {
     padding-left: 1em;
+  }
+
+  .contentUnderImg {
+    font-size: 0.8rem;
+  }
+
+  .textBox {
+    font-size: 1em;
+  }
+}
+
+@media only screen and (max-width: 1056px) {
+  .contentUnderImg {
+    font-size: 0.6rem;
+  }
+
+  .halfMiddleSection {
+    padding-top: 2rem;
+  }
+  .picBoxContainer {
+    margin: 0 4rem !important  ;
   }
 }
