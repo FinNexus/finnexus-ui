@@ -2,22 +2,39 @@ import styles from "../styles/Home.module.css";
 import Head from 'next/head';
 import ArrowComponent from '../components/arrow';
 import MemberComponent from '../components/member';
+import { Container } from '@material-ui/core';
+import Grid from '@material-ui/core/Grid';
+import { makeStyles } from '@material-ui/core/styles';
+import Typography from '@material-ui/core/Typography';
+
+const useStyles = makeStyles({
+  root: {
+    width: '100%',
+    maxWidth: 500,
+    fontFamily: 'Noto Sans',
+    color: 'white'
+  }
+});
 
 export default function Home() {
+  const classes = useStyles();
   return (
     <div className={styles.container}>
       <Head>
         <title>FinNexus</title>
+        <meta
+          name="viewport"
+          content="minimum-scale=1, initial-scale=1, width=device-width"
+        />
         <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet"></link>
       </Head>
       {/** START -- Upper Section. Can be later moved to a component */}
-      <div className={`${styles.section} ${styles.bkgImgBlue}`}>
-        <div className={styles.leftStyleBackground}></div>
-        <div className={styles.centerContent}>
-          <div className={styles.navbar}>
+      <Container maxWidth="lg" className={`${styles.bkgImgBlue}`} style={{ maxWidth: "2000px" }}>
+        <Container maxWidth="lg" className={styles.centerContent}>
+          <Grid container direction="row" className={styles.navbar}>
             {/*https://stackoverflow.com/questions/4476526/do-i-use-img-object-or-embed-for-svg-files*/}
             <object className={styles.logoProps} data="fnxLogo.svg" type="image/svg+xml"></object>
-            <div className={styles.navBtnsContainer}>
+            <div className={`${styles.navBtnsContainer} `}>
               <button className={styles.fnxBtn}>Click1</button>
               <button className={styles.fnxBtn}>Click1</button>
               <button className={styles.fnxBtn}>Click1</button>
@@ -25,32 +42,28 @@ export default function Home() {
               <button className={styles.fnxBtn}>Click1</button>
               <object className={styles.langIcoProps} data="language_icon.svg" type="image/svg+xml"></object>
             </div>
-          </div>
-          <div className={`${styles.mainContent}`}>
-            <div className={styles.upperMainContent}>
-              <div>
+          </Grid>
+          <Grid item lg className={`${styles.mainContent}`}>
+            <Grid item className={styles.upperMainContent}>
+              <Grid lg={7} item>
                 <p className={styles.compName}>FinNexus</p>
                 <p style={{ marginBottom: "10px" }}>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ul</p>
                 <span>
                   <button className={`${styles.fnxBtn} ${styles.fnxPinkBtn}`}>Click1</button>
                   <button className={`${styles.fnxBtn} ${styles.fnxWhiteBtn}`}>Click1</button>
                 </span>
-              </div>
-              <div style={{ padding: "1em 1em 20em 15em" }}>
+              </Grid>
+              <div>
                 <object style={{ height: "15em" }} data="bgshape_01.svg" type="image/svg+xml"></object>
               </div>
-            </div>
-          </div>
-        </div>
-        <div className={styles.rightStyleBackground}></div>
-      </div>
+            </Grid>
+          </Grid>
+        </Container>
+      </Container>
       {/** END -- Upper Section. Can be later moved to a component */}
 
       {/** START -- Next Section Content */}
-      <div className={`${styles.section} ${styles.middleSection}`}>
-        <div className={`${styles.leftStyleBackground} ${styles.leftPinkStyleBackground}`}>
-          <div className={`${styles.leftPinkStyleBackground} ${styles.leftLightPinkStyleBackground}`}></div>
-        </div>
+      <Container maxWidth="lg" className={`${styles.section} ${styles.middleSection}`} style={{ maxWidth: "2000px" }}>
         <div className={`${styles.middleSectionContent}`}>
           <div className={`${styles.halfMiddleSection}`}>
             <div className={styles.halfMiddleOneThird}>
@@ -65,11 +78,7 @@ export default function Home() {
             <div className={styles.halfMiddleTwoThird}></div>
           </div>
         </div>
-        <div className={`${styles.rightStyleBackground} ${styles.rightPinkStyleBackground}`}>
-          <div className={`${styles.rightPinkStyleBackground} ${styles.rightLightPinkStyleBackground}`}>
-          </div>
-        </div>
-      </div>
+      </Container>
       {/** END -- Next Section Content */}
 
       {/** START -- Third Section Content */}

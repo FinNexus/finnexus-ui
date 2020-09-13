@@ -3,8 +3,9 @@
 }
 
 .section {
-  display: grid;
-  grid-template-columns: 1fr max(1000px) 1fr;
+  display: flex;
+  padding-left: 12em;
+  padding-right: 12em;
 }
 
 .bkgImgBlue {
@@ -18,9 +19,9 @@
   background-image: url(/bg_top_header_inverted.svg);
   background-position-x: center;
   background-position-y: top;
-  background-repeat: no-repeat;;
+  background-repeat: no-repeat;
 }
-
+/* 
 .navbar {
   padding: 0 40px;
   grid-area: navbar;
@@ -31,7 +32,7 @@
   grid-column-gap: 10px;
   z-index: 2;
   text-align: center;
-}
+} */
 
 .mainContent {
   grid-area: main-content;
@@ -39,7 +40,6 @@
 }
 
 .centerContent {
-  display: grid;
   min-height: 800px;
   grid-template-rows: 120px 1fr;
   grid-template-areas: "navbar" "main-content";
@@ -77,14 +77,13 @@
 }
 
 .upperMainContent {
-  height: 680px;
   padding: 0 40px;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+  margin-top: 5rem;
 }
 
 .upperMainContent::after {
-  content: '';
+  content: "";
 }
 
 div.upperMainContent p {
@@ -222,9 +221,9 @@ div.upperMainContent p {
 
 .thirdSection {
   height: 1600px;
-  background-image: url(/capsule_bluelight.svg), url(/capsule_purple.svg);
-  background-repeat: no-repeat, no-repeat;
-  background-position: top 33% center, top 75% center;
+  background-image: url(/capsule_bluepurple.svg);
+  background-repeat: no-repeat;
+  background-position: top 36% center;
 }
 
 .thirdSectionContent {
@@ -268,9 +267,9 @@ div.upperMainContent p {
 
 .picBoxContainer {
   display: flex;
-  height: 40%;
+  height: 30%;
   width: 100%;
-  padding-top: 200px;
+  padding-top: 100px;
 }
 
 .picBox {
@@ -386,4 +385,29 @@ span.userPicIcon:first-of-type {
   text-decoration: none;
   background-color: var(--light-pink-color);
   height: 30px;
+}
+
+@media only screen and (max-width: 1200px) {
+  .upperMainContent {
+    padding: 0 10em;
+  }
+
+  .compName {
+    font-size: 2rem;
+  }
+  .navbar {
+    padding: 0 7rem;
+  }
+  .centerContent {
+    min-height: 600px;
+  }
+
+  .fnxBtn {
+    width: 6rem;
+    height: 2rem;
+  }
+
+  .navBtnsContainer {
+    padding-left: 1em;
+  }
 }
