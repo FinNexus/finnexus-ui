@@ -21,23 +21,6 @@
   background-position-y: top;
   background-repeat: no-repeat;
 }
-/* 
-.navbar {
-  padding: 0 40px;
-  grid-area: navbar;
-  height: 100%;
-  align-items: center;
-  display: grid;
-  grid-template-columns: 200px 1fr;
-  grid-column-gap: 10px;
-  z-index: 2;
-  text-align: center;
-} */
-/* 
-.mainContent {
-  grid-area: main-content;
-  display: flex;
-} */
 
 .centerContent {
   min-height: 800px;
@@ -156,7 +139,6 @@ div.upperMainContent p {
 
 .halfMiddleTwoThird {
   width: calc(100% * 2 / 3);
-  border: 1px solid white;
 }
 
 .imageContainer {
@@ -189,9 +171,10 @@ div.upperMainContent p {
 }
 
 .thirdSection {
-  height: 1600px;
+  min-height: 62rem;
   background-image: url(/capsule_bluepurple.svg);
   background-repeat: no-repeat;
+  background-position: top center;
 }
 
 .thirdSectionContent {
@@ -237,8 +220,9 @@ div.upperMainContent p {
 
 .innerPicBox {
   height: 36%;
-  padding: 0px 23px;
+  padding: 1% 20px;
   align-self: flex-end;
+  padding-right: 55px;
   border-radius: 20px;
   background-color: white;
   font-size: 12px;
@@ -298,14 +282,6 @@ div.picSliderBox:last-of-type {
   margin-right: 0;
 }
 
-.leftUpperStyleBackground {
-  border-top-left-radius: 350px;
-}
-
-.rightUpperStyleBackground {
-  border-top-right-radius: 350px;
-}
-
 .userPicIcon {
   width: 50px;
   display: inline-block;
@@ -340,6 +316,31 @@ span.userPicIcon:first-of-type {
   text-decoration: none;
   background-color: var(--light-pink-color);
   height: 30px;
+}
+
+.titleTeam {
+  font-size: 40px;
+}
+
+.teamBoxDesc {
+  margin: 0 4%;
+  font-weight: 800;
+  color: var(--dark-pink-color);
+}
+
+.menuBox {
+  display: grid;
+  color: white;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-gap: 2px 28%;
+}
+
+.copyright {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  color: white;
 }
 
 @media only screen and (max-width: 1200px) {
@@ -390,5 +391,11 @@ span.userPicIcon:first-of-type {
   }
   .picBoxContainer {
     margin: 0 4rem !important  ;
+  }
+}
+
+@media only screen and (max-width: 1102px) {
+  .innerPicBox {
+    padding: 1% 11px;
   }
 }

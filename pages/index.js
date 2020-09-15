@@ -2,7 +2,7 @@ import styles from "../styles/Home.module.css";
 import Head from 'next/head';
 import ArrowComponent from '../components/arrow';
 import MemberComponent from '../components/member';
-import { Container, Grid, Box } from '@material-ui/core';
+import { Container, Grid, Box, Typography, Card, CardMedia } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
 
 const useStyles = makeStyles({
@@ -41,7 +41,7 @@ export default function Home() {
               <object className={styles.langIcoProps} data="language_icon.svg" type="image/svg+xml"></object>
             </div>
           </Grid>
-          <Grid item lg className={`${styles.mainContent}`}>
+          <Grid item lg>
             <Grid item className={styles.upperMainContent}>
               <Grid lg={7} item>
                 <p className={styles.compName}>FinNexus</p>
@@ -63,7 +63,7 @@ export default function Home() {
       {/** START -- Next Section Content */}
       <Container maxWidth="lg" className={`${styles.section} ${styles.middleSection}`} style={{ maxWidth: "2000px" }}>
         <Container maxWidth="lg" className={`${styles.mainContent}`}>
-          <Container maxWidth="lg" className={`${styles.halfMiddleSection}`} style={{ display: "flex" }}>
+          <Container maxWidth="lg" className={`${styles.halfMiddleSection}`} style={{ display: "flex", justifyContent: "flex-end" }}>
             <Grid item lg={4} className={styles.halfMiddleOneThird}>
               <Grid item md={7} className={styles.imageContainer}>
                 <div className={styles.imageBox}></div>
@@ -73,7 +73,16 @@ export default function Home() {
               </div>
               <button className={`${styles.fnxBtn} ${styles.fnxWhiteBtn}`}>Click1</button>
             </Grid>
-            <Grid item lg={7} className={styles.halfMiddleTwoThird}></Grid>
+            <Grid item lg={7} className={styles.halfMiddleTwoThird}>
+              <div style={{
+                backgroundImage: "url(/FNX_options.svg)",
+                height: "100%",
+                backgroundRepeat: "no-repeat",
+                marginLeft: "5em"
+              }}>
+
+              </div>
+            </Grid>
           </Container>
         </Container>
       </Container>
@@ -108,16 +117,31 @@ export default function Home() {
         </Container>
       </Container>
       {/** END -- Third Section Content */}
-
-      <div className={`${styles.section}`}>
-        <MemberComponent></MemberComponent>
-      </div>
+      <Container maxWidth="lg" style={{ maxWidth: "2000px" }}>
+        <Container maxWidth="lg" className={`${styles.mainContent}`}>
+          <div className={styles.teamBoxDesc}>
+            <p className={styles.titleTeam}>TEAM</p>
+            <p>Loren Ipsum</p>
+          </div>
+          <Grid container direction="row" justify="center">
+            <MemberComponent></MemberComponent>
+            <MemberComponent></MemberComponent>
+            <MemberComponent></MemberComponent>
+            <MemberComponent></MemberComponent>
+            <MemberComponent></MemberComponent>
+            <MemberComponent></MemberComponent>
+            <MemberComponent></MemberComponent>
+            <MemberComponent></MemberComponent>
+            <MemberComponent></MemberComponent>
+            <MemberComponent></MemberComponent>
+          </Grid>
+        </Container>
+      </Container>
       {/** START -- Bottom Section */}
-      <div className={`${styles.section} ${styles.bkgImgBlueInverted}`} style={{ minHeight: "800px" }}>
-        <div className={styles.leftUpperStyleBackground}></div>
-        <div className={styles.centerContentInverted}>
-          <div className={`${styles.mainContent}`} style={{ padding: "0 40px", margin: "4em auto 0 auto", color: "white" }}>
-            <div style={{ height: "100%" }}>
+      <Container maxWidth="lg" className={`${styles.bkgImgBlueInverted}`} style={{ maxWidth: "2000px" }}>
+        <Container maxWidth="lg" className={styles.centerContent} style={{ padding: "0 7%" }}>
+          <Grid container justify="space-around" spacing={10} direction="row" style={{ padding: "1% 8%", margin: "4em auto 0 auto", color: "white" }}>
+            <Grid item lg={5} style={{ height: "100%" }}>
               <div style={{ marginBottom: "10px" }}>
                 <p style={{ fontSize: "3em", margin: "0", fontWeight: "900" }}>Join</p>
                 <p>the <b>FinNexus</b> community NOW</p>
@@ -136,21 +160,47 @@ export default function Home() {
                 <span className={styles.userPicIcon}></span>
                 <span className={styles.userPicIcon}></span>
               </div>
-            </div>
-            <div>
+            </Grid>
+            <Grid item lg={5}>
               <p style={{ fontSize: "3em" }}><b>SUBSCRIBE</b></p>
               <p>to the <b>FinNexus</b> NewsLetters</p>
               <span style={{ position: "relative" }}>
                 <input className={styles.subscribeInput} placeholder="Your email" />
                 <button className={styles.subscribeBtn}><b>ok</b></button>
               </span>
-            </div>
-          </div>
-        </div>
-        <div className={styles.rightUpperStyleBackground}>
-        </div>
-      </div>
+            </Grid>
+          </Grid>
+          <Grid container justify="space-around" direction="row" spacing={4}>
+            <Grid item>
+              <div className={styles.menuBox}>
+                <span style={{ gridArea: "1/span 2" }}>Menu1</span>
+                <a href="#">Click1</a>
+                <a href="#">Click1</a>
+                <a href="#">Click1</a>
+                <a href="#">Click1</a>
+                <a href="#">Click1</a>
+                <a href="#">Click1</a>
+              </div>
+            </Grid>
+            <Grid item>
+              <object className={styles.logoProps} data="fnxLogo.svg" type="image/svg+xml"></object>
+            </Grid>
+            <Grid item>
+              <div className={styles.menuBox}>
+                <span style={{ gridArea: "1/span 2" }}>Menu1</span>
+                <a href="#">Click1</a>
+                <a href="#">Click1</a>
+                <a href="#">Click1</a>
+                <a href="#">Click1</a>
+                <a href="#">Click1</a>
+                <a href="#">Click1</a>
+              </div>
+            </Grid>
+          </Grid>
+          <div className={styles.copyright}><p>CopyRight</p></div>
+        </Container>
+      </Container>
       {/** END -- Bottom Section */}
-    </div>
+    </div >
   );
 }

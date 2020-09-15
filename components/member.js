@@ -1,6 +1,13 @@
+import styles from '../styles/member.module.css';
 export default function MemberComponent(props) {
-    let backgroundImg = <img style={{transform: "scaleX(-1)"}} src="/bgshape_02.svg"></img>;
+    let backgroundImg = <img src="/bgshape_03.svg"></img>;
     return (
-        <div>{backgroundImg}</div>
+        <div className={styles.teamMember}>
+            {backgroundImg}
+            <div className={styles.innerText}>
+                <p>Founder and CEO</p>
+                <p>Boris Yang</p>
+            </div>
+        </div>
     );
 }

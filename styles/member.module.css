@@ -1,0 +1,26 @@
+.teamMember {
+  width: 13rem;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  margin: 0 1%;
+}
+
+.teamMember::after {
+  content: "";
+  display: block;
+  padding-bottom: 10%;
+}
+
+.innerText {
+  align-self: flex-end;
+  position: absolute;
+  bottom: 0;
+  background-color: var(--top-color);
+  color: white;
+  padding: 5px 25px;
+  width: 92%;
+  border-radius: 15px;
+  margin: 0 10px;
+  text-align: center;
+}
