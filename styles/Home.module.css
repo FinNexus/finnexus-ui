@@ -343,7 +343,7 @@ span.userPicIcon:first-of-type {
   color: white;
 }
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1280px) {
   .upperMainContent {
     padding: 0 10em;
   }
@@ -358,6 +358,7 @@ span.userPicIcon:first-of-type {
   }
   .navbar {
     padding: 0 7rem;
+    justify-content: space-around;
   }
   .centerContent {
     min-height: 600px;

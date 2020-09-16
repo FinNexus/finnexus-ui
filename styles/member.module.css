@@ -1,5 +1,5 @@
 .teamMember {
-  width: 13rem;
+  width: 10rem;
   display: flex;
   position: relative;
   flex-direction: column;
@@ -18,7 +18,7 @@
   bottom: 0;
   background-color: var(--top-color);
   color: white;
-  padding: 5px 25px;
+  padding: 5px 0px;
   width: 92%;
   border-radius: 15px;
   margin: 0 10px;

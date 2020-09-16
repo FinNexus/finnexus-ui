@@ -27,7 +27,7 @@ export default function Home() {
         <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet"></link>
       </Head>
       {/** START -- Upper Section. Can be later moved to a component */}
-      <Container maxWidth="lg" className={`${styles.bkgImgBlue}`} style={{ maxWidth: "2000px" }}>
+      <Container maxWidth="lg" className={`${styles.bkgImgBlue}`} /* style={{ maxWidth: "2000px" }} */>
         <Container maxWidth="lg" className={styles.centerContent}>
           <Grid container direction="row" className={styles.navbar}>
             {/*https://stackoverflow.com/questions/4476526/do-i-use-img-object-or-embed-for-svg-files*/}
@@ -61,64 +61,60 @@ export default function Home() {
       {/** END -- Upper Section. Can be later moved to a component */}
 
       {/** START -- Next Section Content */}
-      <Container maxWidth="lg" className={`${styles.section} ${styles.middleSection}`} style={{ maxWidth: "2000px" }}>
-        <Container maxWidth="lg" className={`${styles.mainContent}`}>
-          <Container maxWidth="lg" className={`${styles.halfMiddleSection}`} style={{ display: "flex", justifyContent: "flex-end" }}>
-            <Grid item lg={4} className={styles.halfMiddleOneThird}>
-              <Grid item md={7} className={styles.imageContainer}>
-                <div className={styles.imageBox}></div>
-                <div className={styles.textBox}><span className={styles.biggerText}>FPO</span> v1.0</div>
-              </Grid>
-              <div className={styles.contentUnderImg} style={{ padding: "30px 0", color: "white" }}><p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ul</p>
-              </div>
-              <button className={`${styles.fnxBtn} ${styles.fnxWhiteBtn}`}>Click1</button>
+      <Container maxWidth="lg" className={`${styles.section} ${styles.middleSection}`} /* style={{ maxWidth: "2000px" }} */>
+        <Grid container className={`${styles.halfMiddleSection}`} style={{ display: "flex", justifyContent: "flex-end" }}>
+          <Grid item lg={4} className={styles.halfMiddleOneThird}>
+            <Grid item md={7} className={styles.imageContainer}>
+              <div className={styles.imageBox}></div>
+              <div className={styles.textBox}><span className={styles.biggerText}>FPO</span> v1.0</div>
             </Grid>
-            <Grid item lg={7} className={styles.halfMiddleTwoThird}>
-              <div style={{
-                backgroundImage: "url(/FNX_options.svg)",
-                height: "100%",
-                backgroundRepeat: "no-repeat",
-                marginLeft: "5em"
-              }}>
+            <div className={styles.contentUnderImg} style={{ padding: "30px 0", color: "white" }}><p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ul</p>
+            </div>
+            <button className={`${styles.fnxBtn} ${styles.fnxWhiteBtn}`}>Click1</button>
+          </Grid>
+          <Grid item lg={7} className={styles.halfMiddleTwoThird}>
+            <div style={{
+              backgroundImage: "url(/FNX_options.svg)",
+              height: "100%",
+              backgroundRepeat: "no-repeat",
+              marginLeft: "5em"
+            }}>
 
-              </div>
-            </Grid>
-          </Container>
-        </Container>
+            </div>
+          </Grid>
+        </Grid>
       </Container>
       {/** END -- Next Section Content */}
 
       {/** START -- Third Section Content */}
-      <Container maxWidth="lg" className={`${styles.section} ${styles.thirdSection}`} style={{ maxWidth: "2000px" }}>
-        <Container maxWidth="lg" className={styles.thirdSectionContent}>
-          <Container maxWidth="lg" className={styles.picBoxContainer} style={{ display: "flex" }}>
-            <Grid lg={3} sm={3} className={`${styles.picBox}`} spacing={2}>
-              <div className={styles.innerPicBox}>
-                <p className={styles.innerBoxTitle}>Title</p>
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy </p>
-                <ArrowComponent position="bottom right" size="medium" glyphDir="right" glyphColor="pink" />
-              </div>
-            </Grid>
-            <Grid lg={3} sm={3} className={styles.picBox} spacing={2}>
-              <div className={styles.innerPicBox}>
-                <p className={styles.innerBoxTitle}>Title</p>
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy </p>
-                <ArrowComponent position="bottom right" size="medium" glyphDir="right" glyphColor="pink" />
-              </div>
-            </Grid>
-            <Grid lg={3} sm={3} className={styles.picBox} spacing={2}>
-              <div className={styles.innerPicBox}>
-                <p className={styles.innerBoxTitle}>Title</p>
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy </p>
-                <ArrowComponent position="bottom right" size="medium" glyphDir="right" glyphColor="pink" />
-              </div>
-            </Grid>
-          </Container>
-        </Container>
+      <Container maxWidth="lg" className={`${styles.section} ${styles.thirdSection}`}/*  style={{ maxWidth: "2000px" }} */>
+        <Grid container justify="center">
+          <Grid lg={3} sm={3} className={`${styles.picBox}`} spacing={2}>
+            <div className={styles.innerPicBox}>
+              <p className={styles.innerBoxTitle}>Title</p>
+              <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy </p>
+              <ArrowComponent position="bottom right" size="medium" glyphDir="right" glyphColor="pink" />
+            </div>
+          </Grid>
+          <Grid lg={3} sm={3} className={styles.picBox} spacing={2}>
+            <div className={styles.innerPicBox}>
+              <p className={styles.innerBoxTitle}>Title</p>
+              <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy </p>
+              <ArrowComponent position="bottom right" size="medium" glyphDir="right" glyphColor="pink" />
+            </div>
+          </Grid>
+          <Grid lg={3} sm={3} className={styles.picBox} spacing={2}>
+            <div className={styles.innerPicBox}>
+              <p className={styles.innerBoxTitle}>Title</p>
+              <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy </p>
+              <ArrowComponent position="bottom right" size="medium" glyphDir="right" glyphColor="pink" />
+            </div>
+          </Grid>
+        </Grid>
       </Container>
       {/** END -- Third Section Content */}
-      <Container maxWidth="lg" style={{ maxWidth: "2000px" }}>
-        <Container maxWidth="lg" className={`${styles.mainContent}`}>
+      <Container maxWidth="md">
+        <Grid container>
           <div className={styles.teamBoxDesc}>
             <p className={styles.titleTeam}>TEAM</p>
             <p>Loren Ipsum</p>
@@ -135,10 +131,10 @@ export default function Home() {
             <MemberComponent></MemberComponent>
             <MemberComponent></MemberComponent>
           </Grid>
-        </Container>
+        </Grid>
       </Container>
       {/** START -- Bottom Section */}
-      <Container maxWidth="lg" className={`${styles.bkgImgBlueInverted}`} style={{ maxWidth: "2000px" }}>
+      <Container maxWidth="lg" className={`${styles.bkgImgBlueInverted}`} /* style={{ maxWidth: "2000px" }} */>
         <Container maxWidth="lg" className={styles.centerContent} style={{ padding: "0 7%" }}>
           <Grid container justify="space-around" spacing={10} direction="row" style={{ padding: "1% 8%", margin: "4em auto 0 auto", color: "white" }}>
             <Grid item lg={5} style={{ height: "100%" }}>
