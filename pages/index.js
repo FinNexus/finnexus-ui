@@ -60,6 +60,36 @@ export default function Home() {
       </Container>
       {/** END -- Upper Section. Can be later moved to a component */}
 
+      <Container maxWidth="md" className={styles.liqAndInfo}>
+        <Grid container style={{ minHeight: "20em" }} justify="space-around">
+          <Grid item md={5} lg={6} xs={5}>
+            <div style={{
+              backgroundImage: "url(/FNX_liquidity.svg)",
+              height: "100%",
+              backgroundRepeat: "no-repeat",
+            }}></div>
+          </Grid>
+          <Grid item lg={4} md={4} xs={4}>
+            <h1>Liquidity</h1>
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ul</p>
+          </Grid>
+        </Grid>
+        <Grid container style={{ minHeight: "20em" }} justify="space-around">
+          <Grid item lg={4} md={4} xs={4}>
+            <h1>Options</h1>
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ul</p>
+          </Grid>
+          <Grid item md={5} lg={6} xs={5}>
+            <div style={{
+              backgroundImage: "url(/FNX_options.svg)",
+              height: "100%",
+              backgroundRepeat: "no-repeat",
+            }}></div>
+          </Grid>
+        </Grid>
+
+      </Container>
+
       {/** START -- Next Section Content */}
       <Container maxWidth="lg" className={`${styles.section} ${styles.middleSection}`} /* style={{ maxWidth: "2000px" }} */>
         <Grid container className={`${styles.halfMiddleSection}`} style={{ display: "flex", justifyContent: "flex-end" }}>
