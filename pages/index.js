@@ -151,6 +151,15 @@ export default function Home() {
               </div>
             </Grid>
           </Grid>
+          <Grid container justify="center" spacing={2} style={{marginTop: "20px", color: "white"}}>
+            <Grid item>
+              <object className={styles.logoProps} data="FNX_partners.svg" type="image/svg+xml"></object>
+            </Grid>
+            <Grid item>
+              <h1 style={{margin: '0'}}>PARTNERS</h1>
+              <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy </p>
+            </Grid>
+          </Grid>
         </Container>
       </Container>
       {/** END -- Third Section Content */}
