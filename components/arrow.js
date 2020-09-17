@@ -2,11 +2,12 @@ export default function ArrowComponent(props) {
     let glyphDir = '';
     let glyphColor = '';
     let innerStyle = '';
+    let arrowColor = props.arrowColor ? props.arrowColor : 'white';
     let width, height, posAttr = { left: 'unset', right: 'unset', top: 'unset', bottom: 'unset' };
     if (props.glyphDir === 'left') {
-        glyphDir = '&larr;';
+        glyphDir = "/arrows/left_arrow_white.svg";
     } else {
-        glyphDir = '&rarr;';
+        glyphDir = "/arrows/right_arrow_white.svg";
     }
     if (props.glyphColor === 'pink') {
         glyphColor = 'var(--dark-pink-color)';
@@ -16,25 +17,25 @@ export default function ArrowComponent(props) {
         glyphColor = 'var(--light-pink-color)';
     }
     if (props.size === 'medium') {
-        width = "50px";
-        height = "50px";
-        innerStyle = `  display: inline-block;
+        width = "40px";
+        height = "40px";
+        innerStyle = `  display: flex;
                         margin-top: -8px;
                         font-size: 2.5rem;
                         margin-left: 6px;
-                        color: white;`;
+                        color: ${arrowColor};`;
     } else if (props.size === 'large') {
-        width = height = "75px";
-        innerStyle = `display: inline-block;
+        width = height = "55px";
+        innerStyle = `display: flex;
                         margin-top: -12px;
                         font-size: 4rem;
                         margin-left: 8px;
-                        color: white;`
+                        color: ${arrowColor};`
     }
 
     if (props.position === "bottom right" || props.position === "right bottom") {
-        posAttr.right = "10px";
-        posAttr.bottom = "10px";
+        posAttr.right = "5px";
+        posAttr.bottom = "5px";
     } else if (props.right && props.bottom) {
         posAttr.right = props.right;
         posAttr.bottom = props.bottom;
@@ -46,13 +47,19 @@ export default function ArrowComponent(props) {
         height: height,
         position: "absolute",
         borderRadius: "50px",
-        display: "inline-block",
+        display: "flex",
         top: posAttr.top,
         right: posAttr.right,
         bottom: posAttr.bottom,
         left: posAttr.left
     }
+
+    const objectStyles = {
+        width: '20px',
+        height: '20px',
+        margin: 'auto'
+    }
     return (
-        <span style={styleObj} dangerouslySetInnerHTML={{ __html: `<p style="${innerStyle}">${glyphDir}</p>` }}></span>
+        <span style={styleObj}><object style={objectStyles} data={glyphDir} type="image/svg+xml"></object></span>
     );
 }
