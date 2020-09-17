@@ -23,7 +23,7 @@
 }
 
 .centerContent {
-  min-height: 35rem;
+  min-height: 40rem;
 }
 
 .centerContentInverted {
@@ -63,8 +63,8 @@ div.upperMainContent p {
 }
 
 .fnxBtn {
-  width: 9em;
-  height: 3em;
+  width: 6em;
+  height: 2em;
   text-decoration: none;
   color: white;
   border: none;
@@ -107,7 +107,7 @@ div.upperMainContent p {
 .compName {
   color: white;
   font-weight: bold;
-  font-size: 7em;
+  font-size: 5rem;
   margin-bottom: 0;
 }
 
@@ -116,7 +116,7 @@ div.upperMainContent p {
   background-position-x: center;
   background-position-y: top;
   background-repeat: no-repeat;
-  min-height: 714px;
+  min-height: 30rem;
 }
 
 .middleSectionContent {
@@ -344,7 +344,7 @@ span.userPicIcon:first-of-type {
 .liqAndInfo {
   margin-top: 10px;
   margin-bottom: 40px;
-  margin-top: -8rem;
+  margin-top: -14rem;
 }
 
 div.liqAndInfo:nth-of-type() {
@@ -363,34 +363,13 @@ div.liqAndInfo div p {
 }
 
 @media only screen and (max-width: 1280px) {
-  .upperMainContent {
-    padding: 0 10em;
-  }
-
   .halfMiddleSection {
-    padding-left: 10em !important;
-    padding-right: 10em !important;
+    padding-left: 3em !important;
+    padding-right: 3em !important;
   }
 
-  .compName {
-    font-size: 2rem;
-  }
   .navbar {
-    padding: 0 7rem;
     justify-content: space-around;
-  }
-
-  .fnxBtn {
-    width: 6rem;
-    height: 2rem;
-  }
-
-  .navBtnsContainer {
-    padding-left: 1em;
-  }
-
-  .contentUnderImg {
-    font-size: 0.8rem;
   }
 
   .textBox {
@@ -399,10 +378,6 @@ div.liqAndInfo div p {
 }
 
 @media only screen and (max-width: 1056px) {
-  .contentUnderImg {
-    font-size: 0.6rem;
-  }
-
   .halfMiddleSection {
     padding-top: 2rem;
   }

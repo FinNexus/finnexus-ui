@@ -27,8 +27,8 @@ export default function Home() {
         <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet"></link>
       </Head>
       {/** START -- Upper Section. Can be later moved to a component */}
-      <Container maxWidth="lg" className={`${styles.bkgImgBlue}`} /* style={{ maxWidth: "2000px" }} */>
-        <Container maxWidth="lg" className={styles.centerContent}>
+      <Container maxWidth="lg" className={`${styles.bkgImgBlue}`}>
+        <Container maxWidth="md" className={styles.centerContent}>
           <Grid container direction="row" className={styles.navbar}>
             {/*https://stackoverflow.com/questions/4476526/do-i-use-img-object-or-embed-for-svg-files*/}
             <object className={styles.logoProps} data="fnxLogo.svg" type="image/svg+xml"></object>
@@ -60,87 +60,98 @@ export default function Home() {
       </Container>
       {/** END -- Upper Section. Can be later moved to a component */}
 
-      <Container maxWidth="md" className={styles.liqAndInfo}>
-        <Grid container style={{ minHeight: "20em" }} justify="space-around">
-          <Grid item md={5} lg={6} xs={5}>
-            <div style={{
-              backgroundImage: "url(/FNX_liquidity.svg)",
-              height: "100%",
-              backgroundRepeat: "no-repeat",
-            }}></div>
+      <Container>
+        <Container maxWidth="md" className={`${styles.liqAndInfo} ${styles.centerContent}`}>
+          <Grid container style={{ minHeight: "20em" }} justify="space-around">
+            <Grid item md={5} lg={6} xs={5}>
+              <div style={{
+                backgroundImage: "url(/FNX_liquidity.svg)",
+                height: "100%",
+                backgroundRepeat: "no-repeat",
+              }}></div>
+            </Grid>
+            <Grid item lg={4} md={4} xs={4}>
+              <h1>Liquidity</h1>
+              <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ul</p>
+            </Grid>
           </Grid>
-          <Grid item lg={4} md={4} xs={4}>
-            <h1>Liquidity</h1>
-            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ul</p>
+          <Grid container style={{ minHeight: "20em" }} justify="space-around">
+            <Grid item lg={4} md={4} xs={4}>
+              <h1>Options</h1>
+              <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ul</p>
+            </Grid>
+            <Grid item md={5} lg={6} xs={5}>
+              <div style={{
+                backgroundImage: "url(/FNX_options.svg)",
+                height: "100%",
+                backgroundRepeat: "no-repeat",
+              }}></div>
+            </Grid>
           </Grid>
-        </Grid>
-        <Grid container style={{ minHeight: "20em" }} justify="space-around">
-          <Grid item lg={4} md={4} xs={4}>
-            <h1>Options</h1>
-            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ul</p>
-          </Grid>
-          <Grid item md={5} lg={6} xs={5}>
-            <div style={{
-              backgroundImage: "url(/FNX_options.svg)",
-              height: "100%",
-              backgroundRepeat: "no-repeat",
-            }}></div>
-          </Grid>
-        </Grid>
-
+        </Container>
       </Container>
 
       {/** START -- Next Section Content */}
-      <Container maxWidth="lg" className={`${styles.section} ${styles.middleSection}`} /* style={{ maxWidth: "2000px" }} */>
-        <Grid container className={`${styles.halfMiddleSection}`} style={{ display: "flex", justifyContent: "flex-end" }}>
-          <Grid item lg={4} className={styles.halfMiddleOneThird}>
-            <Grid item md={7} className={styles.imageContainer}>
-              <div className={styles.imageBox}></div>
-              <div className={styles.textBox}><span className={styles.biggerText}>FPO</span> v1.0</div>
+      <Container className={styles.middleSection}>
+        <Container maxWidth="md" className={`${styles.section} ${styles.centerContent}`} style={{ minHeight: "35rem" }}>
+          <Grid container className={`${styles.halfMiddleSection}`} style={{ display: "flex", justifyContent: "flex-end" }}>
+            <Grid item lg={4} className={styles.halfMiddleOneThird}>
+              <Grid item md={7} className={styles.imageContainer}>
+                <div className={styles.imageBox}></div>
+                <div className={styles.textBox}><span className={styles.biggerText}>FPO</span> v1.0</div>
+              </Grid>
+              <div className={styles.contentUnderImg} style={{ padding: "30px 0", color: "white" }}><p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ul</p>
+              </div>
+              <button className={`${styles.fnxBtn} ${styles.fnxWhiteBtn}`}>Click1</button>
             </Grid>
-            <div className={styles.contentUnderImg} style={{ padding: "30px 0", color: "white" }}><p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ul</p>
-            </div>
-            <button className={`${styles.fnxBtn} ${styles.fnxWhiteBtn}`}>Click1</button>
-          </Grid>
-          <Grid item lg={7} className={styles.halfMiddleTwoThird}>
-            <div style={{
-              backgroundImage: "url(/FNX_options.svg)",
-              height: "100%",
-              backgroundRepeat: "no-repeat",
-              marginLeft: "5em"
-            }}>
+            <Grid item lg={7} className={styles.halfMiddleTwoThird}>
+              <div style={{
+                backgroundImage: "url(/FNX_options.svg)",
+                height: "100%",
+                backgroundRepeat: "no-repeat",
+                marginLeft: "5em"
+              }}>
 
-            </div>
+              </div>
+            </Grid>
           </Grid>
-        </Grid>
+        </Container>
       </Container>
       {/** END -- Next Section Content */}
 
       {/** START -- Third Section Content */}
-      <Container maxWidth="lg" className={`${styles.section} ${styles.thirdSection}`}/*  style={{ maxWidth: "2000px" }} */>
-        <Grid container justify="center">
-          <Grid lg={3} sm={3} className={`${styles.picBox}`} spacing={2}>
-            <div className={styles.innerPicBox}>
-              <p className={styles.innerBoxTitle}>Title</p>
-              <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy </p>
-              <ArrowComponent position="bottom right" size="medium" glyphDir="right" glyphColor="pink" />
-            </div>
+      <Container className={styles.thirdSection}>
+        <Container maxWidth="md" className={`${styles.section} ${styles.centerContent}`}/*  style={{ maxWidth: "2000px" }} */>
+          <Grid container justify="space-around" spacing={1}>
+            <Grid item lg={3} sm={3}>
+              <div className={`${styles.picBox}`}>
+                <div className={styles.innerPicBox}>
+                  <p className={styles.innerBoxTitle}>Title</p>
+                  <p style={{ fontSize: "9px" }}>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy </p>
+                  <ArrowComponent position="bottom right" size="medium" glyphDir="right" glyphColor="pink" />
+                </div>
+              </div>
+            </Grid>
+            <Grid item lg={3} sm={3}>
+              <div className={`${styles.picBox}`}>
+                <div className={styles.innerPicBox}>
+                  <p className={styles.innerBoxTitle}>Title</p>
+                  <p style={{ fontSize: "9px" }}>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy </p>
+                  <ArrowComponent position="bottom right" size="medium" glyphDir="right" glyphColor="pink" />
+                </div>
+              </div>
+            </Grid>
+            <Grid item lg={3} sm={3}>
+              <div className={`${styles.picBox}`}>
+                <div className={styles.innerPicBox}>
+                  <p className={styles.innerBoxTitle}>Title</p>
+                  <p style={{ fontSize: "9px" }}>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy </p>
+                  <ArrowComponent position="bottom right" size="medium" glyphDir="right" glyphColor="pink" />
+                </div>
+              </div>
+            </Grid>
           </Grid>
-          <Grid lg={3} sm={3} className={styles.picBox} spacing={2}>
-            <div className={styles.innerPicBox}>
-              <p className={styles.innerBoxTitle}>Title</p>
-              <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy </p>
-              <ArrowComponent position="bottom right" size="medium" glyphDir="right" glyphColor="pink" />
-            </div>
-          </Grid>
-          <Grid lg={3} sm={3} className={styles.picBox} spacing={2}>
-            <div className={styles.innerPicBox}>
-              <p className={styles.innerBoxTitle}>Title</p>
-              <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy </p>
-              <ArrowComponent position="bottom right" size="medium" glyphDir="right" glyphColor="pink" />
-            </div>
-          </Grid>
-        </Grid>
+        </Container>
       </Container>
       {/** END -- Third Section Content */}
       <Container maxWidth="md">
