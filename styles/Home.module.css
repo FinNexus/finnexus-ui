@@ -17,8 +17,8 @@
 
 .bkgImgBlueInverted {
   background-color: var(--top-color);
-    border-top-left-radius: 300px;
-    border-top-right-radius: 300px;
+  border-top-left-radius: 300px;
+  border-top-right-radius: 300px;
 }
 
 .centerContent {
@@ -333,6 +333,16 @@ span.userPicIcon:first-of-type {
   flex-direction: row;
   justify-content: center;
   color: white;
+}
+
+.copyrightBox {
+  background-color: #12296b;
+  border-radius: 0;
+}
+
+.contactMenu {
+  background-color: #1a3277;
+  border-radius: 0;
 }
 
 .liqAndInfo {

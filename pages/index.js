@@ -216,6 +216,11 @@ export default function Home() {
               </span>
             </Grid>
           </Grid>
+        </Container>
+      </Container>
+      {/** END -- Bottom Section */}
+      <Container maxWidth="lg" className={styles.contactMenu}>
+        <Container maxWidth="lg">
           <Grid container justify="space-around" direction="row" spacing={4}>
             <Grid item>
               <div className={styles.menuBox}>
@@ -243,10 +248,11 @@ export default function Home() {
               </div>
             </Grid>
           </Grid>
-          <div className={styles.copyright}><p>CopyRight</p></div>
         </Container>
       </Container>
-      {/** END -- Bottom Section */}
+      <Container maxWidth="lg" className={styles.copyrightBox}>
+        <div className={styles.copyright}><p>CopyRight</p></div>
+      </Container>
     </div >
   );
 }
