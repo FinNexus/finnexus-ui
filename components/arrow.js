@@ -5,9 +5,9 @@ export default function ArrowComponent(props) {
     let arrowColor = props.arrowColor ? props.arrowColor : 'white';
     let width, height, posAttr = { left: 'unset', right: 'unset', top: 'unset', bottom: 'unset' };
     if (props.glyphDir === 'left') {
-        glyphDir = "/arrows/left_arrow_white.svg";
+        glyphDir = "arrows/left_arrow_white.svg";
     } else {
-        glyphDir = "/arrows/right_arrow_white.svg";
+        glyphDir = "arrows/right_arrow_white.svg";
     }
     if (props.glyphColor === 'pink') {
         glyphColor = 'var(--dark-pink-color)';
