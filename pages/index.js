@@ -28,7 +28,7 @@ export default function Home() {
       </Head>
       {/** START -- Upper Section. Can be later moved to a component */}
       <Container maxWidth="lg" className={`${styles.bkgImgBlue}`}>
-        <Container maxWidth="md" className={styles.centerContent}>
+        <Container maxWidth="md" /* className={styles.centerContent} */>
           <Grid container direction="row" className={styles.navbar}>
             {/*https://stackoverflow.com/questions/4476526/do-i-use-img-object-or-embed-for-svg-files*/}
             <object className={styles.logoProps} data="fnxLogo.svg" type="image/svg+xml"></object>
@@ -60,8 +60,8 @@ export default function Home() {
       </Container>
       {/** END -- Upper Section. Can be later moved to a component */}
 
-      <Container>
-        <Container maxWidth="md" className={`${styles.liqAndInfo} ${styles.centerContent}`}>
+      <Container maxWidth="lg">
+        <Container maxWidth="md" className={`${styles.liqAndInfo}`}>
           <Grid container style={{ minHeight: "20em" }} justify="space-around">
             <Grid item md={5} lg={6} xs={5}>
               <div style={{
@@ -92,8 +92,8 @@ export default function Home() {
       </Container>
 
       {/** START -- Next Section Content */}
-      <Container className={styles.middleSection}>
-        <Container maxWidth="md" className={`${styles.section} ${styles.centerContent}`} style={{ minHeight: "35rem" }}>
+      <Container maxWidth="lg" className={styles.middleSection}>
+        <Container maxWidth="md" className={`${styles.section}`}>
           <Grid container className={`${styles.halfMiddleSection}`} style={{ display: "flex", justifyContent: "flex-end" }}>
             <Grid item lg={4} className={styles.halfMiddleOneThird}>
               <Grid item md={7} className={styles.imageContainer}>
@@ -120,8 +120,8 @@ export default function Home() {
       {/** END -- Next Section Content */}
 
       {/** START -- Third Section Content */}
-      <Container className={styles.thirdSection}>
-        <Container maxWidth="md" className={`${styles.section} ${styles.centerContent}`}/*  style={{ maxWidth: "2000px" }} */>
+      <Container maxWidth="lg" className={`${styles.thirdSection}`}>
+        <Container maxWidth="md">
           <Grid container justify="space-around" spacing={1}>
             <Grid item lg={3} sm={3}>
               <div className={`${styles.picBox}`}>
@@ -151,12 +151,12 @@ export default function Home() {
               </div>
             </Grid>
           </Grid>
-          <Grid container justify="center" spacing={2} style={{marginTop: "20px", color: "white"}}>
+          <Grid container justify="center" spacing={2} style={{ marginTop: "20px", color: "white" }}>
             <Grid item>
               <object className={styles.logoProps} data="FNX_partners.svg" type="image/svg+xml"></object>
             </Grid>
             <Grid item>
-              <h1 style={{margin: '0'}}>PARTNERS</h1>
+              <h1 style={{ margin: '0' }}>PARTNERS</h1>
               <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy </p>
             </Grid>
           </Grid>
@@ -184,9 +184,9 @@ export default function Home() {
         </Grid>
       </Container>
       {/** START -- Bottom Section */}
-      <Container maxWidth="lg" className={`${styles.bkgImgBlueInverted}`} /* style={{ maxWidth: "2000px" }} */>
-        <Container maxWidth="lg" className={styles.centerContent} style={{ padding: "0 7%" }}>
-          <Grid container justify="space-around" spacing={10} direction="row" style={{ padding: "1% 8%", margin: "4em auto 0 auto", color: "white" }}>
+      <Container maxWidth="lg" className={styles.bkgImgBlueInverted} /* style={{ maxWidth: "2000px" }} */>
+        <Container maxWidth="lg" style={{ padding: "0 7%" }}>
+          <Grid container justify="space-around" spacing={10} direction="row" style={{ margin: "4em auto 0 auto", color: "white" }}>
             <Grid item lg={5} style={{ height: "100%" }}>
               <div style={{ marginBottom: "10px" }}>
                 <p style={{ fontSize: "3em", margin: "0", fontWeight: "900" }}>Join</p>

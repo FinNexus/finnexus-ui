@@ -9,17 +9,16 @@
 }
 
 .bkgImgBlue {
-  background-image: url(/bg_top_header.svg);
-  background-position-x: center;
-  background-position-y: top;
-  background-repeat: no-repeat;
+  background-color: var(--top-color);
+  border-bottom-left-radius: 300px;
+  border-bottom-right-radius: 300px;
+  min-height: 35rem;
 }
 
 .bkgImgBlueInverted {
-  background-image: url(/bg_top_header_inverted.svg);
-  background-position-x: center;
-  background-position-y: top;
-  background-repeat: no-repeat;
+  background-color: var(--top-color);
+    border-top-left-radius: 300px;
+    border-top-right-radius: 300px;
 }
 
 .centerContent {
@@ -107,16 +106,13 @@ div.upperMainContent p {
 .compName {
   color: white;
   font-weight: bold;
-  font-size: 5rem;
+  font-size: 4rem;
   margin-bottom: 0;
 }
 
 .middleSection {
-  background-image: url(/capsule_purplelight.svg);
-  background-position-x: center;
-  background-position-y: top;
-  background-repeat: no-repeat;
-  min-height: 30rem;
+  background-color: var(--light-pink-color);
+  border-radius: 300px;
 }
 
 .middleSectionContent {
@@ -169,10 +165,8 @@ div.upperMainContent p {
 }
 
 .thirdSection {
-  min-height: 62rem;
-  background-image: url(/capsule_bluepurple.svg);
-  background-repeat: no-repeat;
-  background-position: top center;
+  background-color: var(--select-btn-color);
+  border-radius: 300px;
 }
 
 .thirdSectionContent {
@@ -344,7 +338,7 @@ span.userPicIcon:first-of-type {
 .liqAndInfo {
   margin-top: 10px;
   margin-bottom: 40px;
-  margin-top: -14rem;
+  margin-top: -8rem;
 }
 
 div.liqAndInfo:nth-of-type() {
