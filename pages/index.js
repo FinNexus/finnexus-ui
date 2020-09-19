@@ -123,7 +123,7 @@ export default function Home() {
       <Container maxWidth="lg" className={`${styles.thirdSection}`}>
         <Container maxWidth="md">
           <Grid container justify="space-around" spacing={1}>
-            <Grid item lg={3} sm={3}>
+            <Grid item lg={3} md={3} sm={3}>
               <div className={`${styles.picBox}`}>
                 <div className={styles.innerPicBox}>
                   <p className={styles.innerBoxTitle}>Title</p>
@@ -132,7 +132,7 @@ export default function Home() {
                 </div>
               </div>
             </Grid>
-            <Grid item lg={3} sm={3}>
+            <Grid item lg={3} md={3} sm={3}>
               <div className={`${styles.picBox}`}>
                 <div className={styles.innerPicBox}>
                   <p className={styles.innerBoxTitle}>Title</p>
@@ -141,7 +141,7 @@ export default function Home() {
                 </div>
               </div>
             </Grid>
-            <Grid item lg={3} sm={3}>
+            <Grid item lg={3} md={3} sm={3}>
               <div className={`${styles.picBox}`}>
                 <div className={styles.innerPicBox}>
                   <p className={styles.innerBoxTitle}>Title</p>
