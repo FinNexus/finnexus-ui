@@ -379,7 +379,7 @@ div.liqAndInfo div p {
   }
 
   .textBox {
-    font-size: 1em;
+    font-size: 4em;
   }
 }
 
@@ -395,10 +395,11 @@ div.liqAndInfo div p {
 @media only screen and (max-width: 1102px) {
   .innerPicBox {
     padding: 1% 11px;
+    height: 8em;
   }
 }
 
-@media only screen and (max-width: 960px) {
+@media only screen and (max-width: 1000px) {
   .bkgImgBlue {
     border-bottom-left-radius: 25px;
     border-bottom-right-radius: 25px;
@@ -420,8 +421,10 @@ div.liqAndInfo div p {
     padding-left: 0 !important;
     padding-right: 0 !important;
   }
+}
 
+@media only screen and (max-width: 960px) {
   .picBox {
-    width: 31rem;
+    width: 25rem;
   }
 }

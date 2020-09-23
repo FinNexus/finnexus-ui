@@ -156,10 +156,10 @@ export default function Home() {
             </Grid>
           </Grid>
           <Grid container justify="center" spacing={2} style={{ marginTop: "20px", color: "white" }}>
-            <Grid item xs={2}>
+            <Grid item xs={2} lg={1}>
               <object className={styles.logoProps} data="FNX_partners.svg" type="image/svg+xml"></object>
             </Grid>
-            <Grid item xs={10}>
+            <Grid item xs={10} lg={11}>
               <h1 style={{ margin: '0' }}>PARTNERS</h1>
               <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy </p>
             </Grid>
@@ -167,7 +167,7 @@ export default function Home() {
         </Container>
       </Container>
       {/** END -- Third Section Content */}
-      <Container maxWidth="md">
+      <Container maxWidth="md" style={{marginTop: "3em"}}>
         <Grid container>
           <div className={styles.teamBoxDesc}>
             <p className={styles.titleTeam}>TEAM</p>
