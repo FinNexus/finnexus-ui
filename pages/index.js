@@ -41,19 +41,17 @@ export default function Home() {
               <object className={styles.langIcoProps} data="language_icon.svg" type="image/svg+xml"></object>
             </div>
           </Grid>
-          <Grid item lg>
-            <Grid item className={styles.upperMainContent}>
-              <Grid lg={7} item>
-                <p className={styles.compName}>FinNexus</p>
-                <p className={styles.contentUnderImg} style={{ marginBottom: "10px" }}>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ul</p>
-                <span>
-                  <button className={`${styles.fnxBtn} ${styles.fnxPinkBtn}`}>Click1</button>
-                  <button className={`${styles.fnxBtn} ${styles.fnxWhiteBtn}`}>Click1</button>
-                </span>
-              </Grid>
-              <div>
-                <object style={{ height: "15em" }} data="bgshape_01.svg" type="image/svg+xml"></object>
-              </div>
+          <Grid container className={styles.upperMainContent}>
+            <Grid item xs={8} lg={9} md={8}>
+              <p className={styles.compName}>FinNexus</p>
+              <p className={styles.contentUnderImg} style={{ marginBottom: "10px" }}>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ul</p>
+              <span>
+                <button className={`${styles.fnxBtn} ${styles.fnxPinkBtn}`}>Click1</button>
+                <button className={`${styles.fnxBtn} ${styles.fnxWhiteBtn}`}>Click1</button>
+              </span>
+            </Grid>
+            <Grid item xs={3} lg={3} md={4}>
+              <object style={{ height: "15em" }} data="bgshape_01.svg" type="image/svg+xml"></object>
             </Grid>
           </Grid>
         </Container>
@@ -62,29 +60,33 @@ export default function Home() {
 
       <Container maxWidth="lg">
         <Container maxWidth="md" className={`${styles.liqAndInfo}`}>
-          <Grid container style={{ minHeight: "20em" }} justify="space-around">
-            <Grid item md={5} lg={6} xs={5}>
+          <Grid container justify="space-around">
+            <Grid item md={5} lg={6} xs={12} style={{ minHeight: "20em" }}>
               <div style={{
                 backgroundImage: "url(/FNX_liquidity.svg)",
                 height: "100%",
                 backgroundRepeat: "no-repeat",
+                filter: "drop-shadow(0px 10px 15px black)",
+                backgroundPositionX: "center"
               }}></div>
             </Grid>
-            <Grid item lg={4} md={4} xs={4}>
+            <Grid item lg={4} md={4} xs={12}>
               <h1>Liquidity</h1>
               <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ul</p>
             </Grid>
           </Grid>
-          <Grid container style={{ minHeight: "20em" }} justify="space-around">
-            <Grid item lg={4} md={4} xs={4}>
+          <Grid container justify="space-around">
+            <Grid item lg={4} md={4} xs={12} >
               <h1>Options</h1>
               <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ul</p>
             </Grid>
-            <Grid item md={5} lg={6} xs={5}>
+            <Grid item md={5} lg={6} xs={12} style={{ minHeight: "20em" }}>
               <div style={{
                 backgroundImage: "url(/FNX_options.svg)",
                 height: "100%",
                 backgroundRepeat: "no-repeat",
+                backgroundPositionX: "center",
+                filter: "drop-shadow(0px 10px 15px black)"
               }}></div>
             </Grid>
           </Grid>
@@ -95,7 +97,7 @@ export default function Home() {
       <Container maxWidth="lg" className={styles.middleSection}>
         <Container maxWidth="md" className={`${styles.section}`}>
           <Grid container className={`${styles.halfMiddleSection}`} style={{ display: "flex", justifyContent: "flex-end" }}>
-            <Grid item lg={4} className={styles.halfMiddleOneThird}>
+            <Grid item lg={4} xs={12} className={styles.halfMiddleOneThird}>
               <Grid item md={7} className={styles.imageContainer}>
                 <div className={styles.imageBox}></div>
                 <div className={styles.textBox}><span className={styles.biggerText}>FPO</span> v1.0</div>
@@ -104,12 +106,14 @@ export default function Home() {
               </div>
               <button className={`${styles.fnxBtn} ${styles.fnxWhiteBtn}`}>Click1</button>
             </Grid>
-            <Grid item lg={7} className={styles.halfMiddleTwoThird}>
+            <Grid item lg={7} xs={12} className={styles.halfMiddleTwoThird} style={{ minHeight: "20em" }}>
               <div style={{
                 backgroundImage: "url(/FNX_options.svg)",
                 height: "100%",
                 backgroundRepeat: "no-repeat",
-                marginLeft: "5em"
+                marginLeft: "5em",
+                filter: "drop-shadow(0px 10px 15px black)",
+                backgroundPositionX: "center"
               }}>
 
               </div>
@@ -123,7 +127,7 @@ export default function Home() {
       <Container maxWidth="lg" className={`${styles.thirdSection}`}>
         <Container maxWidth="md">
           <Grid container justify="space-around" spacing={1}>
-            <Grid item lg={3} md={3} sm={3}>
+            <Grid item lg={3} md={3} xs={12}>
               <div className={`${styles.picBox}`}>
                 <div className={styles.innerPicBox}>
                   <p className={styles.innerBoxTitle}>Title</p>
@@ -132,7 +136,7 @@ export default function Home() {
                 </div>
               </div>
             </Grid>
-            <Grid item lg={3} md={3} sm={3}>
+            <Grid item lg={3} md={3} xs={12}>
               <div className={`${styles.picBox}`}>
                 <div className={styles.innerPicBox}>
                   <p className={styles.innerBoxTitle}>Title</p>
@@ -141,7 +145,7 @@ export default function Home() {
                 </div>
               </div>
             </Grid>
-            <Grid item lg={3} md={3} sm={3}>
+            <Grid item lg={3} md={3} xs={12}>
               <div className={`${styles.picBox}`}>
                 <div className={styles.innerPicBox}>
                   <p className={styles.innerBoxTitle}>Title</p>
@@ -152,10 +156,10 @@ export default function Home() {
             </Grid>
           </Grid>
           <Grid container justify="center" spacing={2} style={{ marginTop: "20px", color: "white" }}>
-            <Grid item>
+            <Grid item xs={2}>
               <object className={styles.logoProps} data="FNX_partners.svg" type="image/svg+xml"></object>
             </Grid>
-            <Grid item>
+            <Grid item xs={10}>
               <h1 style={{ margin: '0' }}>PARTNERS</h1>
               <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy </p>
             </Grid>
@@ -186,7 +190,7 @@ export default function Home() {
       {/** START -- Bottom Section */}
       <Container maxWidth="lg" className={styles.bkgImgBlueInverted} /* style={{ maxWidth: "2000px" }} */>
         <Container maxWidth="lg" style={{ padding: "0 7%" }}>
-          <Grid container justify="space-around" spacing={10} direction="row" style={{ margin: "4em auto 0 auto", color: "white" }}>
+          <Grid container justify="space-around" spacing={10} direction="row" style={{ flexWrap: "wrap-reverse", marginTop: "4em", color: "white" }}>
             <Grid item lg={5} style={{ height: "100%" }}>
               <div style={{ marginBottom: "10px" }}>
                 <p style={{ fontSize: "3em", margin: "0", fontWeight: "900" }}>Join</p>

@@ -34,7 +34,7 @@
 .upperMainContent {
   padding: 0 40px;
   display: flex;
-  margin-top: 5rem;
+  margin-top: 1rem;
 }
 
 .upperMainContent::after {
@@ -62,8 +62,8 @@ div.upperMainContent p {
 }
 
 .fnxBtn {
-  width: 6em;
-  height: 2em;
+  min-width: 6em;
+  min-height: 2em;
   text-decoration: none;
   color: white;
   border: none;
@@ -198,6 +198,7 @@ div.upperMainContent p {
   background-color: var(--dark-gray-color);
   position: relative;
   display: flex;
+  margin: 0 auto;
 }
 
 .picBox::after {
@@ -218,6 +219,7 @@ div.upperMainContent p {
   border-radius: 20px;
   background-color: white;
   font-size: 12px;
+  width: 100%;
 }
 
 .innerBoxTitle {
@@ -393,5 +395,33 @@ div.liqAndInfo div p {
 @media only screen and (max-width: 1102px) {
   .innerPicBox {
     padding: 1% 11px;
+  }
+}
+
+@media only screen and (max-width: 960px) {
+  .bkgImgBlue {
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+  }
+
+  .middleSection {
+    border-radius: 25px;
+  }
+
+  .thirdSection {
+    border-radius: 25px;
+  }
+
+  .bkgImgBlueInverted {
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+  }
+  .halfMiddleSection {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  .picBox {
+    width: 31rem;
   }
 }
