@@ -2,12 +2,20 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: 'Noto Sans', sans-serif;
+  font-family: 'Noto Sans', sans-serif !important;
 }
 
 a {
   color: inherit;
   text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+p {
+  margin: 0;
 }
 
 * {
@@ -24,4 +32,5 @@ button:focus {
   --select-btn-color: #A2D9DA;
   --dark-pink-color: #6F2C90;
   --light-pink-color: #9F66A9;
+  --dark-gray-color: #585858;
 }
